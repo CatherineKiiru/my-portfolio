@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# Installation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. For this project, one option is to use "npx create-react-app my-app to 
+   create your React app. But this method installs unnecessary files not useful for this project. Instead, clone the repository and select your folder path (.) as shown below :
 
-## Available Scripts
+        --single-branch -b react-mini https://github.com/safak/youtube.git .
 
-In the project directory, you can run:
+2. Proceed to install npm packages with "npm install". You should see the 
+    node_modules folder at the top.
 
-### `yarn start`
+3. Create an image folder under src and move the relevant images there.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+4. Select your preferred Google fonts from Google fonts and paste them into your html file.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+5. To use the font, provide it to your CSS file. Copy the CSS rules from Google fonts, then paste it to the style link in your html file. You should notice a font change in your React app.
 
-### `yarn test`
+# Creating your Personal Information Component
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Start by creating a components>>intro folder under src. Then create an intro.css and intro.jsx file in the intro folder.
 
-### `yarn build`
+2. Use the "rafce" shortcut to create a quick React component. Install the ES7 React-Redux extension to enable such shortcuts.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Write 'this is intro' within the div in Intro.jsx then call the component  within the return div in App.jsx. This will automatically import the componet from the component's folder
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Once you test to see your components are working, divide your Intro.jsx component into two pieces. To do this, define a class name called 'i' then create two divs with two class names; i-left and i-right.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# CSS styling
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Import your intro.css so you can style your class names. set the flex to 1 for both classess i.e. 50% of the component is on the left side while 50% of the other component is on the right side. 
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. Set your components to full screen with 100vh.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+3. wrap (i-left-wrapper) this introclass with 50px padding
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+4. Split the font size for your intros to:
+ - i-intro-30px for the whole intro with a weight of 300
+ - i-name- 60px for the name
+  - i-title- set the job titles to a 50px height
 
-## Learn More
+5. For the animation effect, use the 'overflow: hidden' style to hide all other titles.
+The use animation: move 10s ease-in-out infinite alternate.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This style feature let's you create a continous animation effect on your job titles.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
