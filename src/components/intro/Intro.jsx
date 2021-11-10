@@ -1,4 +1,5 @@
 import "./intro.css"
+import me from "../../img/me.png"
 
 const Intro = () => {
     return (
@@ -15,9 +16,16 @@ const Intro = () => {
                           <div className="i-title-item">Photographer</div>                        
                        </div>
                    </div>
+                   <p className="i-desc">
+                       I am a frontend developer with 5+ years experience in marketing, 
+                       web development, and technical writing.
+                   </p>
                </div>
+               
            </div>
-           <div className="i-right">right</div>
+           <div className="i-right">
+               .i-bg
+               <img src={me} alt="" className="i-img"/> right</div>
         </div>
     )
 }
