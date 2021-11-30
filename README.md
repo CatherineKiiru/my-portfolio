@@ -1,4 +1,6 @@
-# Installation
+
+
+# Installation 
 
 1. For this project, one option is to use "npx create-react-app my-app to 
    create your React app. But this method installs unnecessary files not useful for this project. Instead, clone the repository and select your folder path (.) as shown below :
@@ -26,7 +28,6 @@
 
 # CSS styling
 
-
 1. Import your intro.css so you can style your class names. set the flex to 1 for both classess i.e. 50% of the component is on the left side while 50% of the other component is on the right side. 
 
 2. Set your components to full screen with 100vh.
@@ -43,3 +44,5 @@ The use animation: move 10s ease-in-out infinite alternate.
 
 This style feature let's you create a continous animation effect on your job titles.
 
+# Creating an about React components
+React was used to import the CSS folder and image file (i-bg)
