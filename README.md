@@ -1,4 +1,4 @@
-
+# MY PORTFOLIO WEBSITE
 
 # Installation 
 
@@ -44,5 +44,37 @@ The use animation: move 10s ease-in-out infinite alternate.
 
 This style feature let's you create a continous animation effect on your job titles.
 
-# Creating an about React components
-React was used to import the CSS folder and image file (i-bg)
+6. React was used to import the img folder and image file (className -i-img)-see intro.jsx, line 83.
+  
+     ``` 
+      <div className="i-right">
+          <div className="i-bg"></div>
+          <img src={me} alt="" className="i-img"/> right</div>
+      ``` 
+
+# Creating an about React component 
+1. Under the components folder, create an about foloder, then create two files: 
+  - about.css
+  - About.jsx (note the capital letter)
+
+2. Create an About constant then add a className "a".
+
+3. Import about.css.
+
+4. within the "a" className, add an a-left and a-right className.
+
+5. Within the a-left className, create two cards; one for the image and onther one for the image's background:
+      
+          `
+            <div className="a-left">
+                <div className="a-card bg"></div>
+                <div className="a-card">
+                    <img 
+                    src={random} 
+                    alt=""
+                    className="a-img"/>
+                </div>
+            </div>
+          `
+6. Proceed to style the classess in about.css (.a-card.bg to .a-img)
+

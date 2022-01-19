@@ -10,15 +10,14 @@ const Intro = () => {
                    <h1 className="i-name">Catherine</h1>
                    <div className="i-title">
                        <div className="i-title-wrapper">
-                          <div className="i-title-item">Content Marketing Specialist</div>
-                          <div className="i-title-item">Frontend developer</div>
-                          <div className="i-title-item">Technical writer</div>
-                          <div className="i-title-item">Photographer</div>                        
+                          <div className="i-title-item">Frontend Developer</div>
+                          <div className="i-title-item">Open Source Contributor</div>
+                          <div className="i-title-item">Technical Content Marketing</div>                
                        </div>
                    </div>
                    <p className="i-desc">
-                       I am a frontend developer with 5+ years experience in marketing, 
-                       web development, and technical writing.
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                   Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                    </p>
                </div>
                <svg
