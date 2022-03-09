@@ -43,4 +43,24 @@
 .a-award-img{
     width: 120px;
     height: 120px;
+    border-radius: 20px;
+}
+
+.a-title {
+    font-weight: 600;
+}
+
+.a-sub {
+    margin: 20px 0px;
+}
+
+.a-desc {
+    font-weight: 200;
+}
+
+.a-award {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
