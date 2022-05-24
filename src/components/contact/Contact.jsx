@@ -1,10 +1,24 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import "./contact.css"
 import Phone from "../../img/phone.png"
 import Email from "../../img/email.png"
 import Address from "../../img/address.png"
 
-function Contact() {
+
+const Contact = () => {
+    const formRef = useRef()
+
+    const handleSubmit = (e) => {
+        e.preventDefault ();
+
+        emailjs.sendForm('service_o5zt9mu', 'template_mqe65q9', form.current, '2hK4QwxJ7Pdcblh6Z')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+    };
     return (
         <div className="c">
             <div className="c-bg"></div>
@@ -34,7 +48,7 @@ function Contact() {
                         <b>What's your story</b>Get in touch. I 
                         will help you turn your website into a leads powerhouse
                     </p>
-                    <form>
+                    <form ref={formRef} onSubmit={handleSubmit}>
                        <input type="text" placeholder="Name" name="user_name"/>
                        <input type="text" placeholder="Subject" name="user_subject"/>
                        <input type="text" placeholder="Email" name="user_email"/>
